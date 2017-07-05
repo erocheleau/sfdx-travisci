@@ -7,7 +7,7 @@ env:
   global:
     secure: xfLTPM2FC/edVSpcvmgV4CrO5oacCNdOgIXtJ51aOnVed8Zphd/rnJyO/TK5TGbRsb/FLc1t3Gbl8pCz81zaDlRf8RihbZIjqiFGfVDL8rXKJ5misdlY63cctyTL1idpoxOQJq+Ez0y4/QR/vgE/QShJlf2L6d+5KD7+9dTxpVq28hp2+ZyCOn3M8k3ekYAeJUGDylNZ1TJDTHSJOfFeGI31ITMeYAG/JmKlTHnwzvAF3CEzNm/4FeUh08lEZCNYOomdHWLbKMpAx3U27y8sGTXMs0TCJ1eaN/29gSqaOfehC7YCxd7ktABQecqaQnkwspYCoZOjWj+/jHt8cCAmFY/Q0e59hDd1iCd4PvO+O4GuhMDdj35ZpRSq9KPbKN/Cv8+6srn4J4/aeZVgV9/EzBYkFnEM/t3M0P6li770L7mZ8znI12EGjnXcH0iUwjgXB6dASq0WfSIXqCC6f/l/2FBVRAUZDMrYkGOzrTk3SWAYhPGHxwuENx1tTUYAWAidAX4P3T/+qeyOXGorNIOkCzvzTlL4WJ55fDeVxwQ+JFFRZjbbdLHh6uAWwXUpQO2znmqcsK6mzy41LjaGAwl1ty7pLnUqQ9n26hVPH8fFtsqBWQP0ro4zxoKj4/33T/aPA7utHIRXumcKTxapbwQt36ZYdgtAcC8Hs/RSla32YAc=
 before_install:
-- openssl aes-256-cbc -k "$super_secret_password" -in server.key.enc -out server.key -d
+- openssl aes-256-cbc -k "$super_secret_password" -in assets/server.key.enc -out assets/server.key -d
 - export SFDX_AUTOUPDATE_DISABLE=true
 - export SFDX_USE_GENERIC_UNIX_KEYCHAIN=true
 - export SFDX_DOMAIN_RETRY=300
